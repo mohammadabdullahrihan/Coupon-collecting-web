@@ -21,7 +21,6 @@ const Login = () => {
     const password = event.target.password.value;
   
     setLoading(true);
-    setErrorMessage('');
   
     signInWithEmailAndPassword(auth, email, password)
       .then((result) => {
@@ -37,11 +36,11 @@ const Login = () => {
       })
       .catch((error) => {
         if (error.code === "auth/wrong-password") {
-          setErrorMessage("Incorrect password. Please try again.");
+          toast.error("Incorrect password. Please try again.");
         } else if (error.code === "auth/user-not-found") {
-          setErrorMessage("No user found with this email. Please register.");
+          toast.error("No user found with this email. Please register.");
         } else {
-          setErrorMessage(`Error: ${error.message}`);
+          toast.error(`Error: ${error.message}`);
         }
         toast.error(`Login failed: ${error.message}`);
       })
@@ -70,11 +69,11 @@ const Login = () => {
       })
       .catch((error) => {
         if (error.code === "auth/popup-closed-by-user") {
-          setErrorMessage("Google login popup closed. Please try again.");
+          toast.error("Google login popup closed. Please try again.");
         } else if (error.code === "auth/cancelled-popup-request") {
-          setErrorMessage("Another login attempt is already in progress.");
+          toast.error("Another login attempt is already in progress.");
         } else {
-          setErrorMessage(`Error: ${error.message}`);
+          toast.error(`Error: ${error.message}`);
         }
         toast.error(`Google login failed: ${error.message}`);
       })
