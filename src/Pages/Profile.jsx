@@ -1,9 +1,11 @@
 import React, { useContext, useState } from 'react';
 import { AuthContext } from '../AuthProvider';
+import { useNavigate } from 'react-router-dom';
 
 const Profile = () => {
   const { user } = useContext(AuthContext);
   const [editing, setEditing] = useState(false);
+  const navigate = useNavigate()
 
   if (!user) {
     return <div className="text-center py-10">Please log in to view your profile.</div>;
@@ -30,7 +32,7 @@ const Profile = () => {
           </button>
           {editing && (
             <button
-              onClick={() => (window.location.href = '/update-profile')}
+              onClick={() => navigate('/update-profile')}
               className="mt-4 text-xl px-4 py-4 bg-black text-white rounded-full hover:bg-black"
             >
               Update Information
