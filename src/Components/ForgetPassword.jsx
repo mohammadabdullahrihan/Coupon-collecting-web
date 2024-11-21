@@ -12,22 +12,34 @@ const ForgetPassword = () => {
   };
 
   return (
-    <div className="forget-password">
-      <h2>Reset Password</h2>
-      <form>
-        <label htmlFor="email">Email</label>
-        <input
+    <div>
+
+
+<div class="form-container flex ml-[500px]">
+      <div class="logo-container">
+        Forgot Password
+      </div>
+
+      <form class="form">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
           type="email"
           id="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Enter your email"
+          className=''
           required
         />
-        <button type="button" onClick={handleResetPassword}>
-          Reset Password
-        </button>
+        </div>
+
+        <button class="form-submit-btn"  onClick={handleResetPassword} type="submit">Reset Password</button>
       </form>
+
+
+    </div>
+
     </div>
   );
 };
