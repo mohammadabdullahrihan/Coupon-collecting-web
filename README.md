@@ -4,7 +4,7 @@
 Discount PRO is a web application that allows users to find and use discount coupons for popular e-commerce shops in Bangladesh. The app provides an easy-to-use interface to help users save money on their purchases.
 
 ## Live URL
-[Live Demo](https://your-live-site-url.com)
+[Live Demo](https://coupon-web-assignment-9.netlify.app/)
 
 ## Key Features
 - **User Authentication**: Users can sign up, log in, and log out securely using Firebase Authentication.
@@ -21,7 +21,3 @@ Discount PRO is a web application that allows users to find and use discount cou
 - **Styling**: Tailwind CSS
 - **Deployment**: Firebase Hosting
 
-## Setup Instructions
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-username/discount-pro.git
