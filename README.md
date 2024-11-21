@@ -1,8 +1,27 @@
-# React + Vite
+# Coupon Collecting Application: Discount PRO
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Purpose
+Discount PRO is a web application that allows users to find and use discount coupons for popular e-commerce shops in Bangladesh. The app provides an easy-to-use interface to help users save money on their purchases.
 
-Currently, two official plugins are available:
+## Live URL
+[Live Demo](https://your-live-site-url.com)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key Features
+- **User Authentication**: Users can sign up, log in, and log out securely using Firebase Authentication.
+- **Profile Management**: Users can update their profile details, including display name and profile picture.
+- **Coupon Search**: Users can search for available coupons for various e-commerce websites.
+- **Save Coupons**: Users can save and view their favorite coupons.
+- **Mobile Responsiveness**: The app is fully responsive and optimized for both desktop and mobile devices.
+- **User Notifications**: Toast notifications for error handling and success actions.
+- **Error Handling**: Custom error pages for handling 404 and other errors.
+
+## Tech Stack
+- **Frontend**: React, Vite
+- **Backend**: Firebase (for Authentication and Firestore)
+- **Styling**: Tailwind CSS
+- **Deployment**: Firebase Hosting
+
+## Setup Instructions
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/discount-pro.git

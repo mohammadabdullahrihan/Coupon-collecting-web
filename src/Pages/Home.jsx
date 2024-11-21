@@ -1,9 +1,11 @@
+import React, { useContext, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee"; // For the marquee effect
-import { useState, useEffect } from "react";
+import { AuthContext } from "../AuthProvider"; // Import the AuthContext
 import data from "/public/data.json"; // Assuming your data is stored here
-
+import banner from '/public/656cbc104c3117db5eee38e2_discover-next-gen-sound-v3-image-techware-x-webflow-template.jpg'
 const Home = () => {
+  const { user, logout } = useContext(AuthContext); // Accessing user from context
   const [brandsOnSale, setBrandsOnSale] = useState([]);
 
   useEffect(() => {
@@ -14,18 +16,31 @@ const Home = () => {
 
   return (
     <div className="space-y-8">
-      {/* Banner with Slider */}
-      <div className="relative w-full h-96 bg-gray-300">
-        <div className="absolute inset-0">
-          <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://example.com/slider1.jpg')" }}></div>
+     
+  
+        {/* Banner with Slider */}
+      <div className="relative w-[1200px] ml-[60px] -mt-[50px]">
+        <div className="">
+          <div className="w-full h-full bg-cover bg-center">
+            <img className='rounded-[60px] ' src={banner} alt="" />
+          </div>
         </div>
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-3xl">
-          <h1>Welcome to Discount PRO</h1>
+        <div className="absolute flex flex-col items-center justify-center text-white text-3xl -mt-[600px] space-y-[50px]">
+          <h1 className='font-bold text-7xl text-center space'>Discover, Save, Enjoy <br /> The Ultimate Coupon Hub!</h1>
+
+          <p className='text-xl p-10'>Welcome to Discount PRO, your go-to platform for exclusive deals and discounts. Explore the best coupons from your favorite brands, save big on every purchase, and enjoy a seamless shopping experience. Start saving today!</p>
         </div>
       </div>
 
+      {
+        user ? 
+
+        <>
+         
+
+         
       {/* Top Brands Section */}
-      <div className="px-4">
+      <div className="px-4 mt-10">
         <h2 className="text-2xl font-bold mb-4">Top Brands</h2>
         <Marquee speed={30} gradient={false} className="space-x-6">
           {data?.map((brand) => (
@@ -79,6 +94,13 @@ const Home = () => {
           ))}
         </div>
       </div>
+        </>
+
+        :
+        []
+      }
+
+
     </div>
   );
 };

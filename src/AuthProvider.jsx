@@ -24,7 +24,9 @@ const AuthProvider = ({ children }) => {
       .then(() => setUser({ ...auth.currentUser, displayName: newName, photoURL: newPhotoURL }));
   };
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return 
+  <div class="loader"></div>
+  
 
   return (
     <AuthContext.Provider value={{ user, logout, updateUser }}>
