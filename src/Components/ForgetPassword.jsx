@@ -15,7 +15,7 @@ const ForgetPassword = () => {
     <div>
 
 
-<div class="form-container flex ml-[500px]">
+<div class="form-container flex lg:ml-[500px]">
       <div class="logo-container">
         Forgot Password
       </div>

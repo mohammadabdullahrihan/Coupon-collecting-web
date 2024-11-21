@@ -33,18 +33,18 @@ const CouponPage = () => {
   }
 
   return (
-    <div className="coupon-page flex">
+    <div className="coupon-page lg:flex">
       <ToastContainer />
       <div className="brand-info">
         <img src={brandData.brand_logo} alt={`${brandData.brand_name} Logo`} className="brand-logo" />
-        <h2 className='text-7xl font-semibold'>{brandData.brand_name}</h2>
+        <h2 className='text-5xl font-semibold'>{brandData.brand_name}</h2>
         <p className='text-2xl font-semibold'>Rating: {brandData.rating}</p>
         <p className='text-xl font-medium'>{brandData.description}</p>
       </div>
 
-      <div className="coupons-grid -mt-10">
+      <div className="coupons-grid lg;-mt-10">
         {brandData?.coupons?.map((coupon, index) => (
-          <div key={index} className="coupon-card text-white space-y-3 bg-black p-5 w-[400px] mt-5 rounded-3xl ml-[160px] ">
+          <div key={index} className="coupon-card text-white space-y-3 bg-black p-5 w-[400px] mt-5 rounded-3xl -ml-[35px] lg:ml-[160px] ">
             <p><strong>{coupon.description}</strong></p>
             <p>Expires on: {coupon.expiry_date}</p>
             <p>Condition: {coupon.condition}</p>
