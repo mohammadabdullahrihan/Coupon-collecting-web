@@ -1,159 +1,158 @@
 [
-    {
-      "_id": "1",
-      "brand_name": "ShopNow",
-      "rating": 4.5,
-      "description": "ShopNow offers a wide range of electronics, clothing, and home appliances at unbeatable prices.",
-      "brand_logo": "https://example.com/logos/shopnow.png",
-      "coupons": [
-        {
-          "coupon_code": "SN10OFF",
-          "description": "Get 10% off on all electronics.",
-          "expiry_date": "2024-12-31",
-          "condition": "Valid for electronics only.",
-          "coupon_type": "Percentage"
-        },
-        {
-          "coupon_code": "SN5OFF",
-          "description": "Get 5% off on your first purchase.",
-          "expiry_date": "2024-11-30",
-          "condition": "Valid for new customers only.",
-          "coupon_type": "Percentage"
-        }
-      ],
-      "shop_link": "https://www.shopnow.com",
-      "category": "Electronics",
-      "isSaleOn": true
-    },
-    {
-      "_id": "2",
-      "brand_name": "Fashionista",
-      "rating": 4.7,
-      "description": "Fashionista is your go-to place for trendy clothing and accessories at great prices.",
-      "brand_logo": "https://example.com/logos/fashionista.png",
-      "coupons": [
-        {
-          "coupon_code": "FASH30",
-          "description": "Get 30% off on all apparel.",
-          "expiry_date": "2024-12-15",
-          "condition": "Valid for all apparel items.",
-          "coupon_type": "Percentage"
-        },
-        {
-          "coupon_code": "FASHBUY1",
-          "description": "Buy 1 item and get another one at 50% off.",
-          "expiry_date": "2024-12-01",
-          "condition": "Valid on selected items.",
-          "coupon_type": "Buy 1 Get 1"
-        }
-      ],
-      "shop_link": "https://www.fashionista.com",
-      "category": "Clothing",
-      "isSaleOn": true
-    },
-    {
-      "_id": "3",
-      "brand_name": "GadgetWorld",
-      "rating": 4.3,
-      "description": "GadgetWorld offers the latest tech gadgets and accessories at affordable prices.",
-      "brand_logo": "https://example.com/logos/gadgetworld.png",
-      "coupons": [
-        {
-          "coupon_code": "GADGET15",
-          "description": "Get 15% off on all gadgets.",
-          "expiry_date": "2024-11-20",
-          "condition": "Valid on all gadgets above $100.",
-          "coupon_type": "Percentage"
-        },
-        {
-          "coupon_code": "GADGETFREE",
-          "description": "Free shipping on all orders.",
-          "expiry_date": "2024-11-30",
-          "condition": "No minimum purchase required.",
-          "coupon_type": "Free Shipping"
-        }
-      ],
-      "shop_link": "https://www.gadgetworld.com",
-      "category": "Electronics",
-      "isSaleOn": false
-    },
-    {
-      "_id": "4",
-      "brand_name": "HomeHaven",
-      "rating": 4.6,
-      "description": "HomeHaven offers a wide range of furniture and home decor for all tastes and budgets.",
-      "brand_logo": "https://example.com/logos/homehaven.png",
-      "coupons": [
-        {
-          "coupon_code": "HOME20",
-          "description": "Get 20% off on all furniture.",
-          "expiry_date": "2024-12-05",
-          "condition": "Valid for new furniture purchases.",
-          "coupon_type": "Percentage"
-        },
-        {
-          "coupon_code": "HOMEBUY2",
-          "description": "Buy 2 items and get 1 free on selected furniture.",
-          "expiry_date": "2024-11-25",
-          "condition": "Valid on selected items only.",
-          "coupon_type": "Buy 2 Get 1"
-        }
-      ],
-      "shop_link": "https://www.homehaven.com",
-      "category": "Furniture",
-      "isSaleOn": true
-    },
-    {
-      "_id": "5",
-      "brand_name": "BookBarn",
-      "rating": 4.8,
-      "description": "BookBarn is your perfect destination for books, eBooks, and audiobooks of all genres.",
-      "brand_logo": "https://example.com/logos/bookbarn.png",
-      "coupons": [
-        {
-          "coupon_code": "BOOK20",
-          "description": "Get 20% off on all books.",
-          "expiry_date": "2024-12-10",
-          "condition": "Valid on all books in the store.",
-          "coupon_type": "Percentage"
-        },
-        {
-          "coupon_code": "BOOKBUY1",
-          "description": "Buy 1 book and get another one for 50% off.",
-          "expiry_date": "2024-12-01",
-          "condition": "Valid on selected books only.",
-          "coupon_type": "Buy 1 Get 1"
-        }
-      ],
-      "shop_link": "https://www.bookbarn.com",
-      "category": "Books",
-      "isSaleOn": false
-    },
-    {
-      "_id": "6",
-      "brand_name": "TechSavvy",
-      "rating": 4.4,
-      "description": "TechSavvy provides cutting-edge tech products and solutions for your everyday needs.",
-      "brand_logo": "https://example.com/logos/techsavvy.png",
-      "coupons": [
-        {
-          "coupon_code": "TS10",
-          "description": "Get 10% off on your first order.",
-          "expiry_date": "2024-12-25",
-          "condition": "Valid on first-time orders only.",
-          "coupon_type": "Percentage"
-        },
-        {
-          "coupon_code": "TSFREE",
-          "description": "Free gift with orders over $200.",
-          "expiry_date": "2024-12-15",
-          "condition": "Valid on orders over $200.",
-          "coupon_type": "Free Gift"
-        }
-      ],
-      "shop_link": "https://www.techsavvy.com",
-      "category": "Technology",
-      "isSaleOn": true
-    }
-  ]
-  
+  {
+    "_id": "1",
+    "brand_name": "Daraz",
+    "rating": 4.5,
+    "description": "Daraz offers a wide range of electronics, clothing, and home appliances at unbeatable prices.",
+    "brand_logo": "https://imgs.search.brave.com/esZ6297uBCsA6Jzu66tuI_yoFnfP2_lPGrZbYDteS5s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sb2dv/d2lrLmNvbS9jb250/ZW50L3VwbG9hZHMv/aW1hZ2VzL2RhcmF6/ODUyMi5qcGc",
+    "coupons": [
+      {
+        "coupon_code": "DRZ10OFF",
+        "description": "Get 10% off on all electronics.",
+        "expiry_date": "2024-12-31",
+        "condition": "Valid for electronics only.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "DRZ5OFF",
+        "description": "Get 5% off on your first purchase.",
+        "expiry_date": "2024-11-30",
+        "condition": "Valid for new customers only.",
+        "coupon_type": "Percentage"
+      }
+    ],
+    "shop_link": "https://www.daraz.com.bd",
+    "category": "Electronics",
+    "isSaleOn": true
+  },
+  {
+    "_id": "2",
+    "brand_name": "Aarong",
+    "rating": 4.7,
+    "description": "Aarong is your go-to place for trendy clothing and accessories at great prices.",
+    "brand_logo": "https://imgs.search.brave.com/_NwMUzHWgZ4rCkMHzWFa8QBwRqH-sgxFAASfKYWCC0Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zZWVr/bG9nby5jb20vaW1h/Z2VzL0EvYWFyb25n/LWxvZ28tMjBFMTNE/NkFEMC1zZWVrbG9n/by5jb20ucG5n",
+    "coupons": [
+      {
+        "coupon_code": "AARONG30",
+        "description": "Get 30% off on all apparel.",
+        "expiry_date": "2024-12-15",
+        "condition": "Valid for all apparel items.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "AARONGBUY1",
+        "description": "Buy 1 item and get another one at 50% off.",
+        "expiry_date": "2024-12-01",
+        "condition": "Valid on selected items.",
+        "coupon_type": "Buy 1 Get 1"
+      }
+    ],
+    "shop_link": "https://www.aarong.com",
+    "category": "Clothing",
+    "isSaleOn": true
+  },
+  {
+    "_id": "3",
+    "brand_name": "Pickaboo",
+    "rating": 4.3,
+    "description": "Pickaboo offers the latest tech gadgets and accessories at affordable prices.",
+    "brand_logo": "https://imgs.search.brave.com/HRDj9qAnb_Lga2_pUdUOiJGSFGzfIrnvQyzb6G__bS4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kODh6/ZjBrZncxbnliLmNs/b3VkZnJvbnQubmV0/L3BtL1BpY2Fib29f/Q2hyaXN0bWFzMjAy/M19sb2dvLnBuZw",
+    "coupons": [
+      {
+        "coupon_code": "PICK15",
+        "description": "Get 15% off on all gadgets.",
+        "expiry_date": "2024-11-20",
+        "condition": "Valid on all gadgets above $100.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "PICKFREE",
+        "description": "Free shipping on all orders.",
+        "expiry_date": "2024-11-30",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Free Shipping"
+      }
+    ],
+    "shop_link": "https://www.pickaboo.com",
+    "category": "Electronics",
+    "isSaleOn": false
+  },
+  {
+    "_id": "4",
+    "brand_name": "Furniturebd",
+    "rating": 4.6,
+    "description": "Furniturebd offers a wide range of furniture and home decor for all tastes and budgets.",
+    "brand_logo": "https://imgs.search.brave.com/tBOrkK4Ndfuo9tiYFpm1u8IfqixZuFCeSfAcciiFPX8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtcGxhdGZvcm0u/OTlzdGF0aWMuY29t/Ly9VVGNwdVB2MXNn/empXMjVIVkU3RHFl/c1ZaWUE9LzB4MDoy/MDAweDIwMDAvZml0/LWluLzUwMHg1MDAv/OTlkZXNpZ25zLWNv/bnRlc3RzLWF0dGFj/aG1lbnRzLzEzNS8x/MzUzNTAvYXR0YWNo/bWVudF8xMzUzNTAw/MTk",
+    "coupons": [
+      {
+        "coupon_code": "FURNITURE20",
+        "description": "Get 20% off on all furniture.",
+        "expiry_date": "2024-12-05",
+        "condition": "Valid for new furniture purchases.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "FURNBUY2",
+        "description": "Buy 2 items and get 1 free on selected furniture.",
+        "expiry_date": "2024-11-25",
+        "condition": "Valid on selected items only.",
+        "coupon_type": "Buy 2 Get 1"
+      }
+    ],
+    "shop_link": "https://www.furniturebd.com",
+    "category": "Furniture",
+    "isSaleOn": true
+  },
+  {
+    "_id": "5",
+    "brand_name": "Rokomari",
+    "rating": 4.8,
+    "description": "Rokomari is your perfect destination for books, eBooks, and audiobooks of all genres.",
+    "brand_logo": "https://imgs.search.brave.com/iFCHlF39yluimYYQS5aEpjtgfojzUkfYC2KGORJDg_8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zZWVr/bG9nby5jb20vaW1h/Z2VzL1Ivcm9rb21h/cmktbG9nby0wMkEx/QjEwOTRDLXNlZWts/b2dvLmNvbS5wbmc",
+    "coupons": [
+      {
+        "coupon_code": "BOOK20",
+        "description": "Get 20% off on all books.",
+        "expiry_date": "2024-12-10",
+        "condition": "Valid on all books in the store.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "BOOKBUY1",
+        "description": "Buy 1 book and get another one for 50% off.",
+        "expiry_date": "2024-12-01",
+        "condition": "Valid on selected books only.",
+        "coupon_type": "Buy 1 Get 1"
+      }
+    ],
+    "shop_link": "https://www.rokomari.com",
+    "category": "Books",
+    "isSaleOn": false
+  },
+  {
+    "_id": "6",
+    "brand_name": "Techland",
+    "rating": 4.4,
+    "description": "Techland provides cutting-edge tech products and solutions for your everyday needs.",
+    "brand_logo": "https://imgs.search.brave.com/H-Eh-_58kUI8OawdxPSBrF1WmFxAd03N1lZPX_FwfQM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dC5icmFuZGZldGNo/LmlvL2lkVnRSMy1n/TTcvaWROdURfY2dq/NC5wbmc_dXBkYXRl/ZD0xNzA5ODkzNTc4/Nzg2",
+    "coupons": [
+      {
+        "coupon_code": "TECH10",
+        "description": "Get 10% off on your first order.",
+        "expiry_date": "2024-12-25",
+        "condition": "Valid on first-time orders only.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "TECHFREE",
+        "description": "Free gift with orders over $200.",
+        "expiry_date": "2024-12-15",
+        "condition": "Valid on orders over $200.",
+        "coupon_type": "Free Gift"
+      }
+    ],
+    "shop_link": "https://www.techlandbd.com",
+    "category": "Technology",
+    "isSaleOn": true
+  }
+]

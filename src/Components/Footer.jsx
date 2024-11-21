@@ -19,6 +19,8 @@ const Footer = () => {
   
 
 <ul class="wrapper">
+
+  <a href="https://www.facebook.com/Alabdullahrihan/">
   <li class="icon facebook">
     <span class="tooltip">Facebook</span>
     <svg
@@ -32,6 +34,9 @@ const Footer = () => {
       ></path>
     </svg>
   </li>
+  </a>
+    <a href="https://x.com/AbdullahRi11037">
+
   <li class="icon twitter">
     <span class="tooltip">Twitter</span>
     <svg
@@ -46,6 +51,11 @@ const Footer = () => {
       ></path>
     </svg>
   </li>
+
+    </a>
+
+      <a href="http://www.instagram.com/Alabdullahrihan">
+
   <li class="icon instagram">
     <span class="tooltip">Instagram</span>
     <svg
@@ -60,6 +70,9 @@ const Footer = () => {
       ></path>
     </svg>
   </li>
+
+      </a>
+
 </ul>
 
       
