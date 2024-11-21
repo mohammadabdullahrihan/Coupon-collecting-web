@@ -33,18 +33,18 @@ const CouponPage = () => {
   }
 
   return (
-    <div className="coupon-page">
+    <div className="coupon-page flex">
       <ToastContainer />
       <div className="brand-info">
         <img src={brandData.brand_logo} alt={`${brandData.brand_name} Logo`} className="brand-logo" />
-        <h2>{brandData.brand_name}</h2>
-        <p>Rating: {brandData.rating}</p>
-        <p>{brandData.description}</p>
+        <h2 className='text-7xl font-semibold'>{brandData.brand_name}</h2>
+        <p className='text-2xl font-semibold'>Rating: {brandData.rating}</p>
+        <p className='text-xl font-medium'>{brandData.description}</p>
       </div>
 
-      <div className="coupons-grid">
+      <div className="coupons-grid -mt-10">
         {brandData?.coupons?.map((coupon, index) => (
-          <div key={index} className="coupon-card">
+          <div key={index} className="coupon-card text-white space-y-3 bg-black p-5 w-[400px] mt-5 rounded-3xl ml-[160px] ">
             <p><strong>{coupon.description}</strong></p>
             <p>Expires on: {coupon.expiry_date}</p>
             <p>Condition: {coupon.condition}</p>
@@ -55,14 +55,16 @@ const CouponPage = () => {
                 text={coupon.coupon_code}
                 onCopy={() => toast.success('Coupon code copied to clipboard!', { position: 'top-center' })}
               >
-                <button className="copy-button">Copy Code</button>
+                <button className="copy-button bg-white px-10 py-2
+                 rounded-3xl text-black font-semibold ">Copy Code</button>
               </CopyToClipboard>
 
-              <button className="use-now" onClick={() => window.open(brandData.shop_link, '_blank')}>
+              <button className="use-now px-10 py-2 bg-white text-black rounded-3xl ml-5 font-semibold" onClick={() => window.open(brandData.shop_link, '_blank')}>
                 Use Now
               </button>
             </div>
           </div>
+
         ))}
       </div>
     </div>

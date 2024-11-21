@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -570,4 +571,60 @@ box-shadow:  10px 10px 100px #e6e6e6,
 .wrapper .instagram:hover .tooltip::before {
   background: #e4405f;
   color: #fff;
+}
+
+.input__container--variant {
+  background-color: #000;
+  border-radius: 30px;
+  width: 300px;
+  padding: 1em 1em;
+}
+
+.shadow__input--variant {
+  filter: blur(25px);
+  border-radius: 30px;
+  background-color: #F3FFF9;
+  opacity: 0.5;
+}
+
+.input__button__shadow--variant {
+  border-radius: 15px;
+  background-color: black;
+  padding: 20px;
+  padding-right: 200px;
+  margin-left: 10px;
+  border: none;
+}
+
+.input__button__shadow--variant:hover {
+  background-color: black;
+}
+
+.input__search--variant {
+  width: 13em;
+  align-items: center;
+  border-radius: 13em;
+  outline: none;
+  border: none;
+  padding: 0.8em;
+  font-size: 1.2em;
+  color: #002019;
+  background-color: transparent;
+}
+
+.input__search--variant::placeholder {
+  color: black;
+  opacity: 0.7;
+}
+
+.input__container--variant {
+  background: linear-gradient(to bottom, #F3FFF9, #F3FFF9);
+  border-radius: 1.5em;
+  width: 30em;
+  padding: 1em;
+  margin-left: 430px;
+  border-radius: 43px;
+background: #ffffff;
+box-shadow:  5px 5px 100px #dedede,
+             -5px -5px 100px #ffffff;
 }

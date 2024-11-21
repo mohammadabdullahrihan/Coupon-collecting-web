@@ -46,34 +46,37 @@ const Brands = () => {
       {/* Page Title */}
       <h1 className="text-3xl font-bold text-center py-6">All Brands</h1>
 
-      {/* Search Bar */}
-      <div className="mb-6 flex justify-center">
-        <input
-          type="text"
-          placeholder="Search for a brand..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          className="px-4 py-2 border rounded-lg w-full max-w-md"
-        />
+  
+<div class="input__container input__container--variant">
+        <div class="shadow__input shadow__input--variant"></div>
+        <input type="text" name="text" class="input__search input__search--variant"
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)} 
+        placeholder="Search..."/>
+        <button class="input__button__shadow input__button__shadow--variant">
+          <svg className='pl-[180px]' fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" height="1.5em" width="13em">
+            <path d="M4 9a5 5 0 1110 0A5 5 0 014 9zm5-7a7 7 0 104.2 12.6.999.999 0 00.093.107l3 3a1 1 0 001.414-1.414l-3-3a.999.999 0 00-.107-.093A7 7 0 009 2z" fill-rule="evenodd" fill="#FFF"></path>
+          </svg>
+        </button>
       </div>
 
       {/* Brands Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
         {filteredBrands.map((brand) => (
           <div
             key={brand._id}
-            className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center space-y-4 transition-transform hover:scale-105"
+            className="bg-black p-6 rounded-3xl shadow-lg flex flex-col items-center space-y-4 transition-transform hover:scale-105"
           >
             {/* Brand Logo */}
             <img
               src={brand.brand_logo}
               alt={brand.brand_name}
-              className="h-24 w-24 object-contain"
+              className="h-[160px] bg-white p-8 rounded-3xl object-contain"
             />
 
             {/* Brand Name and Rating */}
             <div className="flex items-center space-x-2">
-              <span className="text-xl font-semibold">{brand.brand_name}</span>
+              <span className="text-xl text-white font-semibold">{brand.brand_name}</span>
               <div className="flex items-center text-yellow-500">
                 {[...Array(5)].map((_, index) => (
                   <FaStar
@@ -85,7 +88,7 @@ const Brands = () => {
             </div>
 
             {/* Brand Description */}
-            <p className="text-center text-sm text-gray-600">{brand.description}</p>
+            <p className="text-center text-sm text-white">{brand.description}</p>
 
             {/* Bouncing Sale Text (if saleIsOn is true) */}
             {brand.saleIsOn && (
@@ -97,7 +100,7 @@ const Brands = () => {
             {/* View Coupons Button */}
             <button
               onClick={() => handleViewCouponsClick(brand._id)}
-              className="mt-4 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700 transition-all"
+              className="mt-4 px-6 py-2 bg-white font-bold rounded-lg hover:bg-blue-700 transition-all"
             >
               View Coupons
             </button>

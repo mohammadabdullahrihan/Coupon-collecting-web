@@ -44,7 +44,7 @@ const Home = () => {
         <h2 className="text-2xl font-bold mb-4">Top Brands</h2>
         <Marquee speed={30} gradient={false} className="space-x-6">
           {data?.map((brand) => (
-            <Link to={`/brand/${brand._id}`} key={brand._id} className="hover:scale-110 transition-all duration-300">
+            <Link to={`/brands/${brand._id}`} key={brand._id} className="hover:scale-110 transition-all duration-300">
               <img src={brand.brand_logo} alt={brand.brand_name} className="h-24" />
             </Link>
           ))}
@@ -56,23 +56,26 @@ const Home = () => {
         <h2 className="text-2xl font-bold mb-4">Brands on Sale</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {brandsOnSale.map((brand) => (
-            <div key={brand._id} className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-              <img src={brand.brand_logo} alt={brand.brand_name} className="h-24 mb-4 mx-auto" />
-              <h3 className="text-xl font-semibold">{brand.brand_name}</h3>
-              <p className="text-sm text-gray-500">{brand.category}</p>
-              <p className="text-sm text-gray-500">Total Coupons: {brand.coupons.length}</p>
+
+            <div key={brand._id} className="bg-black p-4 rounded-3xl shadow-lg hover:shadow-xl transition-shadow">
+              <img src={brand.brand_logo} alt={brand.brand_name} className="h-[130px] mb-4 mx-auto bg-white p-2 rounded-3xl" />
+
+              <h3 className="text-xl text-white font-medium">{brand.brand_name}</h3>
+              <p className="text-sm text-white">{brand.category}</p>
+              <p className="text-sm text-white">Total Coupons: {brand.coupons.length}</p>
             </div>
+
           ))}
         </div>
       </div>
 
       {/* Extra Section 1: Featured Coupons */}
-      <div className="bg-gray-100 py-8">
+      <div className="bg-black p-10 rounded-3xl">
         <div className="px-4 text-center">
-          <h2 className="text-2xl font-bold mb-4">Featured Coupons</h2>
+          <h2 className="text-3xl font-bold mb-4 text-white">Featured Coupons</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {data.slice(0, 3).map((brand) => (
-              <div key={brand._id} className="bg-white p-4 rounded-lg shadow-lg">
+              <div key={brand._id} className="bg-white p-4 rounded-3xl shadow-lg">
                 <img src={brand.brand_logo} alt={brand.brand_name} className="h-24 mb-4 mx-auto" />
                 <h3 className="text-xl font-semibold">{brand.brand_name}</h3>
                 <p className="text-sm text-gray-500">Coupon Offer: {brand.coupons[0]?.coupon_code}</p>
@@ -85,15 +88,23 @@ const Home = () => {
       {/* Extra Section 2: Categories */}
       <div className="px-4">
         <h2 className="text-2xl font-bold mb-4">Shop by Category</h2>
-        <div className="flex space-x-6 overflow-x-auto">
-          {["Electronics", "Clothing", "Books", "Furniture"].map((category, index) => (
-            <div key={index} className="bg-gray-200 px-4 py-6 rounded-lg flex flex-col items-center w-40">
-              <img src="https://via.placeholder.com/100" alt={category} className="h-24 mb-4" />
-              <h3 className="font-semibold">{category}</h3>
-            </div>
-          ))}
-        </div>
+        <div className="grid grid-cols-3 gap-8">
+
+        {data?.map((brand) => (
+
+<div key={brand._id} className="bg-black p-4 rounded-3xl shadow-lg hover:shadow-xl transition-shadow ">
+  <img src={brand.brand_logo} alt={brand.brand_name} className="h-[60px] mb-4 mx-auto bg-white p-2 rounded-3xl" />
+
+  <h3 className="text-xl text-white font-medium">{brand.category}</h3>
+  
+</div>
+
+))}
+
+
       </div>
+
+        </div>
         </>
 
         :
