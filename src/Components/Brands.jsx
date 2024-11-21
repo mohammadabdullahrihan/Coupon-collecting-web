@@ -47,18 +47,34 @@ const Brands = () => {
       <h1 className="text-3xl font-bold text-center py-6">All Brands</h1>
 
   
-<div class="input__container input__container--variant">
-        <div class="shadow__input shadow__input--variant"></div>
-        <input type="text" name="text" class="input__search input__search--variant"
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)} 
-        placeholder="Search..."/>
-        <button class="input__button__shadow input__button__shadow--variant">
-          <svg className='pl-[180px]' fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" height="1.5em" width="13em">
-            <path d="M4 9a5 5 0 1110 0A5 5 0 014 9zm5-7a7 7 0 104.2 12.6.999.999 0 00.093.107l3 3a1 1 0 001.414-1.414l-3-3a.999.999 0 00-.107-.093A7 7 0 009 2z" fill-rule="evenodd" fill="#FFF"></path>
-          </svg>
-        </button>
-      </div>
+      <div className="input__container input__container--variant bg-white rounded-[43px] lg:w-[30em] p-[1em] mx-auto shadow-[5px_5px_100px_#dedede,-5px_-5px_100px_#ffffff]">
+  <div className="shadow__input shadow__input--variant blur-[25px] rounded-[30px] bg-[#F3FFF9] opacity-50"></div>
+  <input
+    type="text"
+    name="text"
+    className="input__search input__search--variant w-[13em] flex items-center rounded-full outline-none border-none p-[0.8em] text-[1.2em] text-[#002019] bg-transparent placeholder-black placeholder-opacity-70"
+    value={searchTerm}
+    onChange={(e) => setSearchTerm(e.target.value)}
+    placeholder="Search..."
+  />
+  <button className="input__button__shadow input__button__shadow--variant rounded-[15px] bg-black p-[20px] lg:pr-[200px] ml-[10px] border-none hover:bg-black">
+    <svg
+      className="pl-[180px]"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 20 20"
+      height="1.5em"
+      width="13em"
+    >
+      <path
+        d="M4 9a5 5 0 1110 0A5 5 0 014 9zm5-7a7 7 0 104.2 12.6.999.999 0 00.093.107l3 3a1 1 0 001.414-1.414l-3-3a.999.999 0 00-.107-.093A7 7 0 009 2z"
+        fillRule="evenodd"
+        fill="#FFF"
+      ></path>
+    </svg>
+  </button>
+</div>
+
 
       {/* Brands Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">

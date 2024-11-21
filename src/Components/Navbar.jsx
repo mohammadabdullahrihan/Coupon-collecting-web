@@ -62,6 +62,7 @@ const Navbar = () => {
     <img src={logo} className=" bg-black rounded-full w-[50px] text-xl m-6"></img>
   </div>
   <div className="navbar-center hidden lg:flex">
+
     <ul className="menu menu-horizontal px-1 space-x-10 text-lg font-medium">
 
     {
@@ -109,11 +110,12 @@ const Navbar = () => {
           }
       
     </ul>
+
   </div>
   <div className="navbar-end">
   {user ? (
             <>
-              <Link to="/profile" className="text-xl font-semibold mr-3">Hello, {user.displayName}</Link>
+              <Link to="/profile" className="lg:text-xl font-semibold ml-20 lg:mr-3">Hello, {user.displayName}</Link>
 
               <div className="dropdown dropdown-end -mt-4">
        
@@ -123,7 +125,7 @@ const Navbar = () => {
         <img
     alt=""
     src={user?.photoURL ? user.photoURL : 'Login'}
-    className="w-10 h-10 rounded-full"
+    className="hidden lg:block w-10 h-10 rounded-full"
   />
         </div>
       </div>

@@ -44,7 +44,7 @@ const Profile = () => {
 
       <div className="">
         <div className=" w-10 bottom-4 left-4 text-white">
-          <h1 className="text-8xl font-bold m-10 w-">Welcome, {user.displayName}</h1>
+          <h1 className="text-7xl font-bold m-10 w-">Welcome, <br /> {user.displayName}</h1>
         </div>
       </div>
     </div>
