@@ -46,15 +46,64 @@ const Navbar = () => {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-        <li><a>Item 1</a></li>
-        <li>
-          <a>Parent</a>
-          <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </li>
-        <li><a>Item 3</a></li>
+
+{
+            user ? <NavLink
+            to="/"
+            className={({ isActive }) => 
+              isActive 
+                ? 'px-4 py-2 text-white text-sm font-semibold rounded-xl bg-black hover:bg-black hover:text-white hover:rounded-xl' 
+                : 'px-4 py-2 text-sm font-semibold'
+            }
+          >
+           Home
+          </NavLink>
+            :
+            []
+          }
+          {
+            user ? <NavLink
+            to="/brands"
+            className={({ isActive }) => 
+              isActive 
+                ? 'px-4 py-2 text-white text-sm font-semibold rounded-xl bg-black hover:bg-black hover:text-white hover:rounded-xl' 
+                : 'px-4 py-2 text-sm font-semibold'
+            }
+          >
+           Brands
+          </NavLink>
+            :
+            []
+          }
+
+          {
+            user? <NavLink
+            to="/profile"
+            className={({ isActive }) => 
+              isActive 
+                ? 'px-4 py-2 text-white text-sm font-semibold rounded-xl bg-black hover:bg-black hover:text-white hover:rounded-xl' 
+                : 'px-4 py-2 text-sm font-semibold'
+            }
+          >
+           Profile
+          </NavLink>
+            :
+            []
+          }
+
+       {
+        user ?
+        <button
+                onClick={handleLogout}
+                className="hidden  lg:flex items-center space-x-1 bg-black text-white px-4 py-2 rounded-2xl"
+              >
+                <FaSignOutAlt />
+                <span>Logout</span>
+              </button>
+        :
+        []
+       }
+        
       </ul>
     </div>
 
@@ -125,7 +174,7 @@ const Navbar = () => {
         <img
     alt=""
     src={user?.photoURL ? user.photoURL : 'Login'}
-    className="hidden lg:block w-10 h-10 rounded-full"
+    className=" w-10 h-10 rounded-full"
   />
         </div>
       </div>
@@ -151,7 +200,7 @@ const Navbar = () => {
              
               <button
                 onClick={handleLogout}
-                className="hover:text-red-500 flex items-center space-x-1 bg-black text-white px-4 py-2 rounded-2xl"
+                className="hidden  lg:flex items-center space-x-1 bg-black text-white px-4 py-2 rounded-2xl"
               >
                 <FaSignOutAlt />
                 <span>Logout</span>

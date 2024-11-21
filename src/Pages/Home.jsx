@@ -19,16 +19,16 @@ const Home = () => {
      
   
         {/* Banner with Slider */}
-      <div className="relative w-[1200px] ml-[60px] -mt-[50px]">
+      <div className="relative w-[400px] lg:w-[1200px] -ml-[35px] lg:ml-[60px] lg:-mt-[50px]">
         <div className="">
           <div className="w-full h-full bg-cover bg-center">
             <img className='rounded-[60px] ' src={banner} alt="" />
           </div>
         </div>
-        <div className="absolute flex flex-col items-center justify-center text-white text-3xl -mt-[600px] space-y-[50px]">
-          <h1 className='font-bold text-7xl text-center space'>Discover, Save, Enjoy <br /> The Ultimate Coupon Hub!</h1>
+        <div className="absolute flex flex-col items-center justify-center text-white lg:text-3xl -mt-[250px] lg:-mt-[600px] lg;space-y-[50px]">
+          <h1 className='font-bold text-xl lg:text-7xl text-center space'>Discover, Save, Enjoy <br /> The Ultimate Coupon Hub!</h1>
 
-          <p className='text-xl p-10'>Welcome to Discount PRO, your go-to platform for exclusive deals and discounts. Explore the best coupons from your favorite brands, save big on every purchase, and enjoy a seamless shopping experience. Start saving today!</p>
+          <p className='lg:text-xl text-sm p-10  lg:p-10'>Welcome to Discount PRO, your go-to platform for exclusive deals and discounts. Explore the best coupons from your favorite brands, save big on every purchase, and enjoy a seamless shopping experience. Start saving today!</p>
         </div>
       </div>
 
@@ -88,7 +88,7 @@ const Home = () => {
       {/* Extra Section 2: Categories */}
       <div className="px-4">
         <h2 className="text-2xl font-bold mb-4">Shop by Category</h2>
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-8">
 
         {data?.map((brand) => (
 
